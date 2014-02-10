@@ -32,6 +32,8 @@
 			});
 			$("#container").html(foldhtml);
 			$("#page").height((folds.length+0.5)*(options.animationLength));
+			$("#footer-top").height(Math.floor($(window).height()*.4));
+			$("#footer-bottom").height(Math.ceil($(window).height()*.6));
 		}
 		
 		var resizeId;
@@ -44,6 +46,8 @@
 			var sTop = $(window).scrollTop();
 			var numtimes = 0;
 			var carpos = 0;
+			$("#footer-top").height(Math.floor($(window).height()*.4));
+			$("#footer-bottom").height(Math.ceil($(window).height()*.6));
 			for (var j=0;j<folds.length;j++){
 				curpos = sTop;
 				numtimes = sTop;
