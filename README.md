@@ -5,10 +5,8 @@ responsive_3dfoldscroll
 Example:
 `````javascript
 $( document ).ready(function() {
-    window.onload=function(){
-	    var fold = $.fn.responsive_3dfoldscroll({
-		    animationLength : 1500
-	    });
-    };
+  var fold = $.fn.responsive_3dfoldscroll({
+    animationLength : 1500
+  });
 });
 `````
